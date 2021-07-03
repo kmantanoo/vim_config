@@ -9,7 +9,7 @@ call plug#end()
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " Map Ctrl-Backspace to delete the previous word in insert mode.
-inoremap <C-BS> <C-W>
+inoremap <C-H> <C-W>
 
 let g:deoplete#enable_at_startup = 1
 set number

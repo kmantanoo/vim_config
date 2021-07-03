@@ -10,6 +10,8 @@ call plug#end()
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " Map Ctrl-Backspace to delete the previous word in insert mode.
 inoremap <C-H> <C-W>
+nnoremap <C-m> :cd %:h<CR>
+"nnoremap <C-M> :cd -<CR>
 
 let g:deoplete#enable_at_startup = 1
 set number
@@ -19,6 +21,8 @@ set softtabstop=4
 
 " NERDTree autocmd
 " Start NERDTree. If a file is specfified, move the cursor to its windows.
+
+let NERDTreeShowBookmarks=1
 autocmd StdinReadPre * let s:std_in=1
 " has argument list
 :if argc() > 0 && !exists('s:std_in')
